@@ -1,0 +1,414 @@
+{
+  "info": {
+    "name": "On the Fly API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    {
+      "key": "baseUrl",
+      "value": "http://localhost:3001"
+    }
+  ],
+  "item": [
+    {
+      "name": "GET /trips",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/api/trips",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "api",
+            "trips"
+          ]
+        }
+      }
+    },
+    {
+      "name": "GET /trips/:id",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/api/trips/1",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "api",
+            "trips",
+            "1"
+          ]
+        }
+      }
+    },
+    {
+      "name": "POST /trips",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "{{baseUrl}}/api/trips",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "api",
+            "trips"
+          ]
+        },
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"title\": \"Test Trip\",\n  \"description\": \"desc\",\n  \"img_url\": \"https://example.com/img.jpg\",\n  \"num_days\": 3,\n  \"start_date\": \"2026-08-01\",\n  \"end_date\": \"2026-08-03\",\n  \"total_cost\": 900\n}"
+        }
+      }
+    },
+    {
+      "name": "PATCH /trips/:id",
+      "request": {
+        "method": "PATCH",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "{{baseUrl}}/api/trips/1",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "api",
+            "trips",
+            "1"
+          ]
+        },
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"title\": \"Test Trip\",\n  \"description\": \"desc\",\n  \"img_url\": \"https://example.com/img.jpg\",\n  \"num_days\": 3,\n  \"start_date\": \"2026-08-01\",\n  \"end_date\": \"2026-08-03\",\n  \"total_cost\": 900\n}"
+        }
+      }
+    },
+    {
+      "name": "DELETE /trips/:id",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/api/trips/1",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "api",
+            "trips",
+            "1"
+          ]
+        }
+      }
+    },
+    {
+      "name": "GET /destinations",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/api/destinations",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "api",
+            "destinations"
+          ]
+        }
+      }
+    },
+    {
+      "name": "GET /destinations/:id",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/api/destinations/1",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "api",
+            "destinations",
+            "1"
+          ]
+        }
+      }
+    },
+    {
+      "name": "POST /destinations",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "{{baseUrl}}/api/destinations",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "api",
+            "destinations"
+          ]
+        },
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"destination\": \"Bellagio\",\n  \"description\": \"Fountain show\",\n  \"city\": \"Las Vegas\",\n  \"country\": \"USA\",\n  \"img_url\": \"https://example.com/d.jpg\",\n  \"flag_img_url\": \"https://example.com/f.png\"\n}"
+        }
+      }
+    },
+    {
+      "name": "PATCH /destinations/:id",
+      "request": {
+        "method": "PATCH",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "{{baseUrl}}/api/destinations/1",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "api",
+            "destinations",
+            "1"
+          ]
+        },
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"destination\": \"Bellagio\",\n  \"description\": \"Fountain show\",\n  \"city\": \"Las Vegas\",\n  \"country\": \"USA\",\n  \"img_url\": \"https://example.com/d.jpg\",\n  \"flag_img_url\": \"https://example.com/f.png\"\n}"
+        }
+      }
+    },
+    {
+      "name": "DELETE /destinations/:id",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/api/destinations/1",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "api",
+            "destinations",
+            "1"
+          ]
+        }
+      }
+    },
+    {
+      "name": "GET /activities",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/api/activities",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "api",
+            "activities"
+          ]
+        }
+      }
+    },
+    {
+      "name": "GET /activities/:trip_id",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/api/activities/1",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "api",
+            "activities",
+            "1"
+          ]
+        }
+      }
+    },
+    {
+      "name": "POST /activities/:trip_id",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "{{baseUrl}}/api/activities/1",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "api",
+            "activities",
+            "1"
+          ]
+        },
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"activity\": \"Blackjack\"\n}"
+        }
+      }
+    },
+    {
+      "name": "PATCH /activities/:id",
+      "request": {
+        "method": "PATCH",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "{{baseUrl}}/api/activities/1",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "api",
+            "activities",
+            "1"
+          ]
+        },
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"num_votes\": 1\n}"
+        }
+      }
+    },
+    {
+      "name": "DELETE /activities/:id",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/api/activities/1",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "api",
+            "activities",
+            "1"
+          ]
+        }
+      }
+    },
+    {
+      "name": "GET /trips-destinations",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/api/trips-destinations",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "api",
+            "trips-destinations"
+          ]
+        }
+      }
+    },
+    {
+      "name": "GET trips for destination",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/api/trips-destinations/trips/1",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "api",
+            "trips-destinations",
+            "trips",
+            "1"
+          ]
+        }
+      }
+    },
+    {
+      "name": "GET destinations for trip",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/api/trips-destinations/destinations/1",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "api",
+            "trips-destinations",
+            "destinations",
+            "1"
+          ]
+        }
+      }
+    },
+    {
+      "name": "POST /trips-destinations",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "{{baseUrl}}/api/trips-destinations",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "api",
+            "trips-destinations"
+          ]
+        },
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"trip_id\": 1,\n  \"destination_id\": 1\n}"
+        }
+      }
+    }
+  ]
+}

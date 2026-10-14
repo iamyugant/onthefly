@@ -1,0 +1,47 @@
+[
+  {
+    "title": "Vegas Graduation Trip",
+    "description": "Celebrate graduation with the Bellagio fountains, Caesars Palace blackjack tables, and a night on Fremont Street.",
+    "img_url": "https://images.unsplash.com/photo-1605833556294-ea5c7a74f57d",
+    "num_days": 4,
+    "start_date": "2026-06-12",
+    "end_date": "2026-06-15",
+    "total_cost": "1800.00"
+  },
+  {
+    "title": "Pacific Coast Road Trip",
+    "description": "Drive Highway 1 from San Francisco to San Diego with stops in Big Sur, Santa Barbara, and Malibu.",
+    "img_url": "https://images.unsplash.com/photo-1449034446853-66c86144b0ad",
+    "num_days": 7,
+    "start_date": "2026-07-04",
+    "end_date": "2026-07-10",
+    "total_cost": "2400.00"
+  },
+  {
+    "title": "NYC Weekend Getaway",
+    "description": "Broadway shows, Central Park picnics, and pizza slices in every borough.",
+    "img_url": "https://images.unsplash.com/photo-1496442226666-8d4d0e62e6e9",
+    "num_days": 3,
+    "start_date": "2026-09-18",
+    "end_date": "2026-09-20",
+    "total_cost": "1500.00"
+  },
+  {
+    "title": "Austin Bachelor Party",
+    "description": "Live music on 6th Street, BBQ crawls, and a lake day on Lady Bird Lake.",
+    "img_url": "https://images.unsplash.com/photo-1531218150217-54595bc2b934",
+    "num_days": 3,
+    "start_date": "2026-10-02",
+    "end_date": "2026-10-04",
+    "total_cost": "1200.00"
+  },
+  {
+    "title": "Hawaii Family Reunion",
+    "description": "Beach days in Maui, a Road to Hana drive, and a sunset luau with the whole family.",
+    "img_url": "https://images.unsplash.com/photo-1507876466758-bc54f384809c",
+    "num_days": 8,
+    "start_date": "2026-12-20",
+    "end_date": "2026-12-27",
+    "total_cost": "5200.00"
+  }
+]
