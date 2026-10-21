@@ -6,16 +6,18 @@ const ActivityBtn = (props) =>  {
   const [num_votes, setNumVotes] = useState(props.num_votes)
 
   const updateCount = async () => {
+    const next = num_votes + 1
+    setNumVotes(next)
+
     const options = {
       method: 'PATCH',
       headers: {
         'Content-Type': 'application/json'
       },
-      body: JSON.stringify({ num_votes: num_votes + 1 })
+      body: JSON.stringify({ num_votes: next })
     }
 
     await fetch('/api/activities/' + props.id, options)
-    setNumVotes((prev) => prev + 1)
   }
 
   return (
