@@ -1,0 +1,5 @@
+$kind: http-request
+name: GET /destinations/:id
+url: "{{baseUrl}}/api/destinations/1"
+method: GET
+order: 7000

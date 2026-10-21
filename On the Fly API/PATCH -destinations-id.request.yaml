@@ -1,0 +1,18 @@
+$kind: http-request
+name: PATCH /destinations/:id
+url: "{{baseUrl}}/api/destinations/1"
+method: PATCH
+headers:
+  Content-Type: application/json
+body:
+  type: text
+  content: |-
+    {
+      "destination": "Bellagio",
+      "description": "Fountain show",
+      "city": "Las Vegas",
+      "country": "USA",
+      "img_url": "https://example.com/d.jpg",
+      "flag_img_url": "https://example.com/f.png"
+    }
+order: 9000

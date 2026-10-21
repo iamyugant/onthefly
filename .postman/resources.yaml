@@ -1,0 +1,7 @@
+# Use this workspace to collaborate
+workspace:
+  id: 8be600da-e798-4342-8bec-59e27f516c9c
+
+localResources:
+  collections:
+    - ../On the Fly API

@@ -1,0 +1,13 @@
+$kind: http-request
+name: PATCH /activities/:id
+url: "{{baseUrl}}/api/activities/1"
+method: PATCH
+headers:
+  Content-Type: application/json
+body:
+  type: text
+  content: |-
+    {
+      "num_votes": 1
+    }
+order: 14000

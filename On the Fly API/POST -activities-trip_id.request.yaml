@@ -1,0 +1,13 @@
+$kind: http-request
+name: POST /activities/:trip_id
+url: "{{baseUrl}}/api/activities/1"
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: text
+  content: |-
+    {
+      "activity": "Blackjack"
+    }
+order: 13000
